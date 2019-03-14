@@ -1,0 +1,47 @@
+html {box-sizing: border-box}
+*,*::before,*::after{box-sizing: inherit}
+
+body {
+    
+}
+
+
+
+label {
+    
+}
+
+input {
+    
+}
+
+input:focus {
+    background: rgb(240, 210, 255);
+}
+
+::placeholder {
+    color: mediumpurple;
+}
+
+textarea {
+    
+}
+
+textarea:focus {
+    background: rgb(240, 210, 255);
+}
+
+
+button {
+    width: 150px;
+    margin: auto;
+    height: 50px;
+    border: 5px;
+    border-color: blueviolet;
+    background:blueviolet;
+    color:rgb(240, 210, 255);
+    border-radius: 3px;
+    font-size: 24px;
+    width: 100%;
+}
+
