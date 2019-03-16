@@ -2,12 +2,252 @@ html {box-sizing: border-box}
 *,*::before,*::after{box-sizing: inherit}
 
 body {
-    
+    background-image: url("./Images/bg.jpg");
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
 }
 
+/*DO NOT TOUCH!*/
+#social {
+    margin:5px 12% 5px 12%;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+#subscribe {
+    margin: 0 0 0 55%;
+}
+
+#subscribe a {
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#socialLinks {
+    text-align: right;    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -45px;
+}
+
+#dotGroup {
+    margin-top: 7px;
+}
+
+.dots{
+    line-height: 6px;
+}
+
+#socialLinks a {
+    text-decoration:none;
+    padding: 0 0 0 5px;
+}
+
+#socialLinks a img {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+}
+/* DO NOT TOUCH*/
+
+#fullSite {
+    margin-left: 12%;
+    margin-right: 12%;
 
 
-label {
+}
+/* DO NOT TOUCH*/
+#nav {
+    margin-top: -25px
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center;    
+    background: rgb(165, 51, 52);
+    padding: 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    display: inline-block;
+    height: 35px;
+    width: 24.5%;   
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.nav a::before {
+    content: "-  ";
+    color: white;
+    font-size: 24px;
+    font-weight:lighter;
+}
+
+.nav a::after {
+    content: "  -";
+    color: white;
+    font-size: 24px;
+    font-weight:lighter;
+}
+
+#face {
+    width: 94.8%;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 0 0 5%;
+    border: solid 7px white;    
+    padding: 0px;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+}
+
+.article {
+    width:100%;
+    height:250px;
+    position: relative;
+}
+  
+.image {
+    background-image: url(./Images/top-image-crop.png);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.overlay:before {
+    position: absolute;
+    content:" ";
+    width:100%;
+    height:100%;
+    filter: opacity(30%);
+    z-index:0;
+    background-image: url(./Images/grid.png);
+}
+  
+.article * {
+    position: relative;
+}
+
+#wings img{
+    height: 150px;
+    margin: 50px 20px;
+}
+  
+ #threeDot {
+    text-align: center;
+    margin-top: 15px;
+ }   
+
+.dot3 {
+    width: 12px;
+    height:12px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0px;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    margin: 0 3px;
+    position: relative;
+}
+
+.redDot {
+    color: rgb(165, 51, 52);
+    font-size: 18px;
+    position: absolute;
+    top: -5px;
+    left: 2.5px;
+}
+
+#articles {
+    width: 94.5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5%;
+}
+
+#articles h1 {
+    font-size: 20px;
+    color: black;
+    font-weight: 400; 
+}
+
+#articles h2 {
+    font-size: 10px;
+    color: rgb(186, 186, 186);
+    font-weight: lighter;
+}
+
+#articles p {
+    font-size: 10px;
+    color: rgb(115, 115, 115);
+    line-height: 14px;
+}
+
+.arts a {
+    font-size: 12px;
+    color: rgb(165, 51, 52);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#art1 {
+    width: 32.5%;
+    height: 250px;
+    background-color: white;
+    padding: 10px 25px;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+}
+
+#art2 {
+    width: 32.5%;
+    height: 250px;
+    background-color: white;
+    padding: 10px 25px;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+}
+
+#art3 {
+    width: 32.5%;
+    height: 250px;
+    background-color: white;
+    padding: 10px 25px;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+}
+/* DO NOT TOUCH*/  
+
+
+
+
+
+
+
+
+
+
+
+
+
+#click {
+    display: block;
+}
+
+/*label {
     
 }
 
