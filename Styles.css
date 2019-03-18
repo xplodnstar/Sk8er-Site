@@ -2,20 +2,32 @@ html {box-sizing: border-box}
 *,*::before,*::after{box-sizing: inherit}
 
 body {
-    background-image: url("./Images/bg.jpg");
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: hard-light;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
-
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    margin: -5px -5px 0;
 }
 
-/*DO NOT TOUCH!*/
+body:after {
+    content: "";
+    position: absolute;
+    background-image: url("./Images/bg.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    z-index: -5;
+    opacity: .3;
+}
+
+#fullSite {
+    margin:0 20% 0 20%;
+}
+
 #social {
-    margin:5px 12% 5px 12%;
+    margin:5px 0 ;
     color: white;
     font-weight: lighter;
     font-size: 12px;
@@ -35,14 +47,14 @@ body {
 }
 
 #socialLinks {
-    text-align: right;    
+    text-align: right;
     display: flex;
     justify-content: flex-end;
-    margin-top: -45px;
+    margin-top: -40px;
 }
 
 #dotGroup {
-    margin-top: 7px;
+    margin-top: 13px;
 }
 
 .dots{
@@ -60,17 +72,9 @@ body {
     padding: 0;
     box-shadow: 0 3px rgba(175, 175, 175, 0.5);
 }
-/* DO NOT TOUCH*/
 
-#fullSite {
-    margin-left: 12%;
-    margin-right: 12%;
-
-
-}
-/* DO NOT TOUCH*/
 #nav {
-    margin-top: -25px
+    margin: -25px -.5% 0 .5% ;
 }
 
 .nav {
@@ -107,8 +111,8 @@ body {
 }
 
 #face {
-    width: 94.8%;
-    height: 250px;
+    width: 95%;
+    height: auto;
     overflow: hidden;
     margin: 0 0 0 5%;
     border: solid 7px white;    
@@ -174,9 +178,10 @@ body {
 }
 
 #articles {
-    width: 94.5%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 10px 5%;
 }
 
@@ -206,82 +211,251 @@ body {
     text-align: center;
 }
 
-#art1 {
-    width: 32.5%;
-    height: 250px;
+#articles div {
+    width: 33%;
+    height: auto;
     background-color: white;
-    padding: 10px 25px;
+    padding: 10px 25px 20px;
     box-shadow: 0 3px rgba(175, 175, 175, 0.5);
 }
 
-#art2 {
+#skaters {
+    margin: 20px 5%;
+    width: 96%;
+    height: auto; 
+    position: relative;
+}
+
+#lance {
+    background-image: url(./Images/sk8er-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding: 100px 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    color: white;
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center;
     width: 32.5%;
-    height: 250px;
+    height: 300px;
+    border: solid 7px white;
+    float:left;
+    margin: 0 4px 0 0;
+}
+
+#rod {
+    background-image: url(./Images/sk8er-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    color: white;
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center;
+    width: 32.5%;
+    height: 300px;
+    border: solid 7px white;
+    float:left;
+    margin: 0 0 0 4px;
+}
+
+#tom {
+    background-image: url(./Images/sk8er-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  80% 0%;
+    padding: 250px 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    color: white;
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center;
+    width: 32.5%;
+    height: 610px;
+    border: solid 7px white;
+    float:left;
+    margin: 0 0 20px 8px;
+}
+
+#steve {
+    background-image: url(./Images/sk8er-1.png);
+    background-repeat: no-repeat;
+    background-position:  0 0;
+    padding: 100px 0;
+    box-shadow: 0 3px rgba(175, 175, 175, 0.5);
+    color: white;
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center;
+    width: 65.8%;
+    height: 300px;
+    border: solid 7px white;
+    float:left;
+    margin: -320px 0 20px 0;
+}
+
+#arrow {
+    padding: 10px 25px 20px;
+    color: white;
+    font-size: 24px;
+    font-weight:lighter;
+    width: 270px;
+    height: 96px;
+    position: absolute;
+    top: 100px;
+    left: -300px;
+}
+
+#decks {
+    margin: 0 5%;
+    width: 95.1%;
+    height: auto;
     background-color: white;
-    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px ;
     box-shadow: 0 3px rgba(175, 175, 175, 0.5);
 }
 
-#art3 {
-    width: 32.5%;
-    height: 250px;
+.decks {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+#form{
+    margin: 20px 5%;
+    width: 95%;
+    height: auto;
     background-color: white;
-    padding: 10px 25px;
+    padding: 10px 25px 20px;
     box-shadow: 0 3px rgba(175, 175, 175, 0.5);
-}
-/* DO NOT TOUCH*/  
-
-
-
-
-
-
-
-
-
-
-
-
-
-#click {
-    display: block;
+    display: flex;
+    position: relative;
 }
 
-/*label {
-    
+#contact {
+    width:55%;
+    padding: 15px;
 }
 
-input {
-    
+#contact h1 {
+    font-size: 20px;
+    color:  rgb(68, 69, 65);
+    font-weight: 400; 
 }
 
-input:focus {
-    background: rgb(240, 210, 255);
+#contact p {
+    font-size: 14px;
+    color:  rgb(68, 69, 65);
+    font-weight: 400; 
 }
 
-::placeholder {
-    color: mediumpurple;
+#name {
+    outline: none;
+    border: solid; 
+    border-width: 3px 1px 1px 3px;
+    border-color:  rgb(175, 175, 175);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 45%;
+    height: 30px;
+    padding: 5px;
+}
+
+#email {
+    outline: none;
+    border: solid; 
+    border-width: 3px 1px 1px 3px;
+    border-color:  rgb(175, 175, 175);
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 45%;
+    height: 30px;
+    padding: 5px;
 }
 
 textarea {
-    
+    outline: none;
+    border: solid; 
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    width: 45%;
+    border-width: 3px 1px 1px 3px;
+    border-color:  rgb(175, 175, 175);
+    padding: 5px;
 }
 
-textarea:focus {
-    background: rgb(240, 210, 255);
+::placeholder {
+    color: rbg(175, 175, 175);
+    font-size: 12px;
+    font-weight:lighter;
 }
-
 
 button {
-    width: 150px;
-    margin: auto;
-    height: 50px;
-    border: 5px;
-    border-color: blueviolet;
-    background:blueviolet;
-    color:rgb(240, 210, 255);
-    border-radius: 3px;
-    font-size: 24px;
-    width: 100%;
+    margin: 5px 0;
+    width: 130px;
+    height: 30px;
+    text-align: center;    
+    background: rgb(165, 51, 52);
+    padding: 0;
+    color: white;
+    font-size: 12px;
+    font-weight:100;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
 }
 
+@media screen and (max-width:1200px) {
+    .nav {  
+        display: block;
+    }
+    #lance {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+
+    }
+    #rod {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;        
+        margin-left: 0;
+    }
+    #tom {
+        width: 300px;
+        height: 320px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    #steve {
+        width: 600px;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    #decks {
+        flex-direction: column;
+        width: 600px;
+        height: auto;
+    }
+    .decks {
+        width: 95%;
+    }
+}
+
+#click {
+    display: block;
+    background-color: black;
+    z-index: 0;
+}
